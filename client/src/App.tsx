@@ -11,7 +11,8 @@ function App() {
 
 
   const handleCloseApp = ()=> {
-tg.sendData(JSON.stringify({ action: 'menu_select', item: 'close' }));
+    tg.sendData(JSON.stringify({action: 'button_click', text: 'Привет!'}))
+    tg.close()
   }
 
   console.log(tg)
